@@ -31,6 +31,23 @@ This will install `siitool` to `/usr/local/bin` and will install a supportive
 man page. To change the default install location simply change the `PREFIX`
 variable in the Makefile to the location you prefer.
 
+Example
+=======
+
+Generate SII binaries from ESI files ::
+
+  $ ./siitool -o drive.bin drive.xml
+
+Print EEPROM content in a human-readable format ::
+
+  $ ./siitool -p drive.bin
+  
+Generate header file from binaries ::
+
+  $ ./bin2header drive.bin tiesc_eeprom.h tiesc_eeprom
+
+with the tool from TI (``<sysbios>/tools/bin2header/``)
+
 Licence
 =======
 
